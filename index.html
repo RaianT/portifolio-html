@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-900">
+    <header class="bg-gray-800 text-white p-5">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Raian Tomaz</h1>
+            <nav class="space-x-4">
+                <button class="tab-link hover:text-gray-400" data-tab="about">Sobre Mim</button>
+                <button class="tab-link hover:text-gray-400" data-tab="education">Formação</button>
+                <button class="tab-link hover:text-gray-400" data-tab="skills">Conhecimentos</button>
+                <button class="tab-link hover:text-gray-400" data-tab="projects">Projetos</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-5">
+        <div id="about" class="tab-content hidden">
+            <section class="text-center my-8">
+                <h2 class="text-4xl font-bold mb-4">Raian Tomaz</h2>
+                <img src="img/Raian.jpg" alt="Minha foto" class="rounded-full w-48 mx-auto mt-6">
+                <br>
+                <p class="text-lg text-center text-justify mx-auto w-3/4">Sou apaixonado por tecnologia, me dedico sempre em busca de novas aprendizagens. Sou técnico em informática, estou constantemente atualizando e expandindo meus conhecimentos no vasto campo da tecnologia. Com um entusiasmo especial por programação, encontro prazer em criar e desenvolver soluções inovadoras. Além disso, adoro trabalhar com manutenção de computadores, configurações de redes, o que me permite mergulhar em desafios práticos e descobrir algo novo a cada dia.</p>
+            </section>
+        </div>
+
+        <div id="education" class="tab-content hidden">
+            <section class="my-8">
+                <h2 class="text-4xl font-bold text-center mb-4">Formação e Experiências</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flip-container">
+                        <div class="flip-card">
+                            <div class="flip-card-front bg-gray-100 p-6 rounded-lg shadow-md">
+                                <img src="img/senac-logo.png" alt="Instituição 1" class="w-24 mx-auto">
+                                <h3 class="text-xl font-semibold text-center mt-4">Serviço Nacional de Aprendizagem Comercial</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="text-xl font-semibold">Serviço Nacional de Aprendizagem Comercial - SENAC</h3>
+                                <p>Como técnico em Informática, fui capacitado a planejar e executar processos de manutenção de computadores e a operar redes locais de computadores. Durante a formação, desenvolvi habilidades em criação de aplicativos computacionais, sempre seguindo normas técnicas, de qualidade, segurança do trabalho e preservação ambiental. Esse conhecimento me permite atuar de forma eficaz e responsável, oferecendo soluções tecnológicas inovadoras e sustentáveis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-container">
+                        <div class="flip-card">
+                            <div class="flip-card-front bg-gray-100 p-6 rounded-lg shadow-md">
+                                <img src="img/fametro-logo.png" alt="Instituição 2" class="w-24 mx-auto">
+                                <h3 class="text-xl font-semibold text-center mt-4">Faculdade Metropolitana de Ensino</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="text-xl font-semibold">Faculdade Metropolitana de Ensino - Fametro</h3>
+                                <p>Estou cursando o curso de Sistemas de Informação, onde adquiri conhecimentos em diversas áreas fundamentais. O curso abrange temas como fundamentos da computação, redes de computadores, sistemas de armazenamento de dados, linguagens de programação, segurança da informação, desenvolvimento de software, além de matemática e estatística. Esse aprendizado tem sido essencial para o meu crescimento profissional e para a ampliação das minhas competências técnicas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-container">
+                        <div class="flip-card">
+                            <div class="flip-card-front bg-gray-100 p-6 rounded-lg shadow-md">
+                                <img src="img/IOA-logo.png" alt="Instituição 3" class="w-24 mx-auto">
+                                <h3 class="text-xl font-semibold text-center mt-4">Imprensa Oficial do Estado do Amazonas</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="text-xl font-semibold">Imprensa Oficial do Estado do Amazonas</h3>
+                                <p>Trabalho com suporte de TI, realizando reparo de computadores, manutenções corretivas, troca de equipamentos e limpeza de hardware. Gerencio usuários através do Active Directory e executo manutenções corretivas no site da Imprensa Oficial. Atuo na infraestrutura de TI, abrangendo cabeamento de redes, configurações e monitoramento de CFTV, bem como o gerenciamento de tráfego de links de internet. Minha experiência me permite lidar com uma ampla gama de desafios tecnológicos e oferecer soluções eficientes e eficazes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="skills" class="tab-content hidden">
+            <section class="my-8">
+                <h2 class="text-4xl font-bold text-center mb-4">Conhecimentos</h2>
+                <div class="flex justify-center">
+                    <ul class="list-disc pl-10">
+                        <li>Manuntenção de Computadores</li>
+                        <li>Instalação de hardware e software para computadores</li>
+                        <li>Manuntenção e configurações em redes de computadores</li>
+                        <li>Realizações de backups</li>
+                    </ul>
+                    <ul class="list-disc pl-10">
+                        <li>Banco de dados</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+        <div id="projects" class="tab-content hidden">
+            <section class="my-8">
+                <h2 class="text-4xl font-bold text-center mb-4">Projetos</h2>
+                <ul class="list-disc pl-10">
+                    <li>Projeto 1</li>
+                    <li>Projeto 2</li>
+                    <li>Projeto 3</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-5 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.tab-link').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabContentId = button.getAttribute('data-tab');
+                document.querySelectorAll('.tab-content').forEach(tabContent => {
+                    tabContent.classList.add('hidden');
+                });
+                document.getElementById(tabContentId).classList.remove('hidden');
+            });
+        });
+        document.querySelector('.tab-link[data-tab="about"]').click();
+    </script>
+</body>
+</html>
